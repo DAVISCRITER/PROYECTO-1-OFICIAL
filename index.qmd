@@ -38,7 +38,6 @@ knitr:
     out.width: "70%"
 ---
 
-
 ```{r setup}
 options(
   knitr.table.format = "html",
