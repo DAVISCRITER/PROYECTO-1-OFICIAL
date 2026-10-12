@@ -36,6 +36,7 @@ knitr:
     fig.width: 6
     fig.height: 6
     out.width: "70%"
+bibliography: references.bib
 ---
 
 ```{r setup}
@@ -61,7 +62,7 @@ body{
 </style>
 ```
 
-(Wickham et al. 2019; Zhu 2024; 2026; Wickham y Bryan 2025)
+[@readxl; @tidyverse; @kableExtra](Wickham et al. 2019; Zhu 2024; 2026; Wickham y Bryan 2025)
 
 ```{r}
 ipak <- function(pkg){
@@ -81,8 +82,6 @@ packages <- c("tidyverse","kableExtra","psych","readxl")
 
 ipak(packages)
 ```
-
-[@tidyverse; @kableExtra; @psych; @readxl]
 
 # **Distribución de Frecuencias: Concepto**
 
@@ -1381,7 +1380,7 @@ polygon(dens, col = rgb(1, 0, 0, 0.5), border = "red")
 
 ## Interpretación
 
-La tabla presenta una distribución de frecuencias del promedio agrupado en intervalos de amplitud 0.5, con un total de 300 observaciones. Se puede ver que el intervalo con mayor frecuencia es (2.5,3.0], con 56 personas (19%), lo que indica que la mayor concentración de datos se encuentra alrededor de ese rango. A medida que aumentan los intervalos, las frecuencias tienden a fluctuar, pero en general se observa que la mayoría de los valores se concentran entre 1.5 y 4.5, donde se acumula más del 90% de los datos (Hi ≈ 0.94). Además, la frecuencia acumulada muestra que el 50% de las observaciones no supera el 3.0, lo que sugiere una distribución relativamente centrada en valores medios. En conjunto, la tabla indica que los promedios están distribuidos de manera moderadamente concentrada en el rango medio, sin una dispersión extrema hacia los valores más bajos o más altos.
+La tabla presenta una distribución de frecuencias del promedio agrupado en intervalos de amplitud 0.5, con un total de 300 observaciones. Se puede ver que el intervalo con mayor frecuencia es (2.5,3.0\], con 56 personas (19%), lo que indica que la mayor concentración de datos se encuentra alrededor de ese rango. A medida que aumentan los intervalos, las frecuencias tienden a fluctuar, pero en general se observa que la mayoría de los valores se concentran entre 1.5 y 4.5, donde se acumula más del 90% de los datos (Hi ≈ 0.94). Además, la frecuencia acumulada muestra que el 50% de las observaciones no supera el 3.0, lo que sugiere una distribución relativamente centrada en valores medios. En conjunto, la tabla indica que los promedios están distribuidos de manera moderadamente concentrada en el rango medio, sin una dispersión extrema hacia los valores más bajos o más altos.
 :::
 
 **Generación de intervalos `Asistencia (%)`**
@@ -1724,7 +1723,7 @@ polygon(dens, col = rgb(1, 0, 0, 0.5), border = "red")
 
 ## Interpretación
 
-La tabla muestra la distribución de frecuencias de la asistencia de los encuestados en 300 observaciones, agrupadas en intervalos de amplitud 5. Se observa que el intervalo con mayor frecuencia es (80,85], con 55 casos (18.3%), lo que indica que la mayor concentración de niveles de asistencia se encuentra en ese rango. En general, los datos se distribuyen de forma claramente asimétrica, con una fuerte concentración en los valores altos: la frecuencia acumulada revela que aproximadamente el 50% de las observaciones no supera el 80%, mientras que cerca del 85% está por debajo del 95%. Asimismo, los valores más bajos (por debajo de 65) representan una proporción menor del total, lo que sugiere que predominan niveles de asistencia intermedios a altos. En conjunto, la distribución presenta una tendencia hacia valores altos con una cola moderada hacia los extremos inferiores, pero sin concentraciones marcadas en los rangos más bajos.
+La tabla muestra la distribución de frecuencias de la asistencia de los encuestados en 300 observaciones, agrupadas en intervalos de amplitud 5. Se observa que el intervalo con mayor frecuencia es (80,85\], con 55 casos (18.3%), lo que indica que la mayor concentración de niveles de asistencia se encuentra en ese rango. En general, los datos se distribuyen de forma claramente asimétrica, con una fuerte concentración en los valores altos: la frecuencia acumulada revela que aproximadamente el 50% de las observaciones no supera el 80%, mientras que cerca del 85% está por debajo del 95%. Asimismo, los valores más bajos (por debajo de 65) representan una proporción menor del total, lo que sugiere que predominan niveles de asistencia intermedios a altos. En conjunto, la distribución presenta una tendencia hacia valores altos con una cola moderada hacia los extremos inferiores, pero sin concentraciones marcadas en los rangos más bajos.
 :::
 
 ## **Tablas de contingencia**

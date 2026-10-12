@@ -62,7 +62,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="index_files/libs/clipboard/clipboard.min.js"></script>
@@ -166,7 +185,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Fecha de publicación</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">11 de octubre de 2026</p>
+        <p class="date">12 de octubre de 2026</p>
       </div>
     </div>
     
@@ -220,7 +239,7 @@ body{
   text-align:justify;
 }
 </style>
-<p>(Wickham et al.&nbsp;2019; Zhu 2024; 2026; Wickham y Bryan 2025)</p>
+<p><a href="Wickham%20et%20al.%202019;%20Zhu%202024;%202026;%20Wickham%20y%20Bryan%202025"><span class="citation" data-cites="readxl">Wickham y Bryan (<span>2026</span>)</span>; <span class="citation" data-cites="tidyverse">Wickham et&nbsp;al. (<span>2019</span>)</span>; <span class="citation" data-cites="kableExtra">Zhu (<span>2026</span>)</span></a></p>
 <div class="cell" data-layout-align="center">
 <details class="code-fold">
 <summary>Echa un vistazo</summary>
@@ -242,7 +261,6 @@ body{
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">ipak</span>(packages)</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<p><span class="citation" data-cites="tidyverse kableExtra psych readxl">[@tidyverse; @kableExtra; @psych; @readxl]</span></p>
 <section id="distribución-de-frecuencias-concepto" class="level1">
 <h1><strong>Distribución de Frecuencias: Concepto</strong></h1>
 <p>Una <strong>distribución de frecuencias</strong> es una forma de <strong>organizar, resumir y presentar datos estadísticos</strong> mediante tablas que muestran el número de observaciones que pertenecen a cada categoría o intervalo de una variable.</p>
@@ -3133,10 +3151,21 @@ Distribución de frecuencias para la variable de asistencia
 </div>
 </div>
 </div>
+
 </section>
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referencias</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-tidyverse" class="csl-entry" role="listitem">
+Wickham, Hadley, Mara Averick, Jennifer Bryan, et&nbsp;al. 2019. <em>Welcome to the <span></span>tidyverse<span></span></em>. 4: 1686. <a href="https://doi.org/10.21105/joss.01686">https://doi.org/10.21105/joss.01686</a>.
+</div>
+<div id="ref-readxl" class="csl-entry" role="listitem">
+Wickham, Hadley, y Jennifer Bryan. 2026. <em>readxl: Read Excel Files</em>. <a href="https://doi.org/10.32614/CRAN.package.readxl">https://doi.org/10.32614/CRAN.package.readxl</a>.
+</div>
+<div id="ref-kableExtra" class="csl-entry" role="listitem">
+Zhu, Hao. 2026. <em>kableExtra: Construct Complex Table with ’kable’ and Pipe Syntax</em>. <a href="https://doi.org/10.32614/CRAN.package.kableExtra">https://doi.org/10.32614/CRAN.package.kableExtra</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
